@@ -1,0 +1,150 @@
+@charset "UTF-8";
+p, h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font: 600;
+  color: #4A4A4A;
+  font-size: 28px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  position: relative;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(74, 74, 74, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #00415F;
+  color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  border-bottom: 0.5px solid #00415F;
+  font-family: "Poppins", sans-serif;
+  height: 60px;
+  background-color: #00415F;
+  z-index: 1000;
+  padding: 10px 0;
+  left: 0;
+  top: 0;
+}
+
+.content {
+  max-width: 1146px;
+  margin: 0 auto;
+  background-color: #E7E1DC;
+}
+
+.text {
+  background-color: #E7E1DC;
+}
+
+#jaja {
+  margin-top: 1500px;
+}
+
+.logo {
+  float: left;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+.nav-list :hover {
+  background-color: #D1CBC7;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.nav-item {
+  padding: 10px 35px;
+  background-color: #00415F;
+  border-right: 1px solid #00415F;
+  display: block;
+}
+.nav-item :hover {
+  background-color: #D1CBC7;
+  transition-duration: 1s;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#pionowaLista {
+  text-decoration: none;
+  list-style-type: none;
+}
+#pionowaLista :hover {
+  background-color: #D1CBC7;
+  transition-duration: 1s;
+}
+
+.pionowaListaItem {
+  padding: 10px 35px;
+  background-color: #E7E1DC;
+}
+
+.pionowaListaItem-link {
+  text-decoration: none;
+}
+
+.logo {
+  float: left; /* Przesuwa logo na lewo */
+}
+
+.nav {
+  float: right; /* Przesuwa nawigację na prawo */
+}
+
+#footer {
+  margin-top: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-item {
+  margin-left: 50px;
+}
+
+#lokalization {
+  text-align: center;
+  margin-top: 900px;
+}
+
+#strzalka {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

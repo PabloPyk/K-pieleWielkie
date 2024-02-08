@@ -1,0 +1,75 @@
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #00415F;
+    z-index: 100;
+    color: white;
+    font-size: 32px;
+
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+}
+
+.logo {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.logo-title p {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 24px;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 350px;
+
+
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 20px;
+
+}
+
+.hamburger-menu {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    border-radius: 4px;
+
+
+}
+
+.hamburger-menu:hover {
+    background-color: white;
+}
