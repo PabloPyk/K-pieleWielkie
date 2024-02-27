@@ -8,27 +8,31 @@
     left: 0;
     right: 0;
     background-color: #00415F;
-    z-index: 100;
+    z-index: 400;
     color: white;
-    font-size: 32px;
+
 
 }
 
 .left-section {
     display: flex;
     align-items: center;
-    width: 250px;
+    justify-content: center;
+    margin-left: 20px;
+    column-gap: 20px;
 
 }
 
-.logo {
-    margin-right: 20px;
-    margin-left: 0;
-}
+
 
 .logo-title p {
     font-family: 'Protest Riot', sans-serif;
     font-size: 24px;
+    background-image: linear-gradient(to right, #737373, #dddcda);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
 }
 
 .logo-icon {
@@ -36,16 +40,21 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    margin-left: 20px;
+
 }
 
 .middle-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 350px;
 
 
+
+}
+
+.website-tittle {
+
+    font-size: 42px;
 }
 
 .right-section {
@@ -53,8 +62,60 @@
     align-items: center;
     justify-content: left;
     margin-right: 20px;
+    column-gap: 50px;
+
 
 }
+
+.location-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    position: relative;
+
+
+}
+
+.location-section-button:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.location-section-button:hover .section-tooltip {
+    opacity: 1;
+
+}
+
+.section-tooltip {
+    position: absolute;
+    bottom: -49px;
+    background-color: rgba(168, 167, 167, 0.738);
+    pointer-events: none;
+    white-space: nowrap;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 400;
+    font-family: Poppins, Arial;
+
+}
+
+.location-section-icon {
+    width: 35px;
+    height: 35px;
+    padding-top: 2px;
+}
+
+
 
 .hamburger-menu {
     width: 40px;
@@ -72,4 +133,22 @@
 
 .hamburger-menu:hover {
     background-color: white;
+}
+
+
+
+
+/* responsive header */
+
+@media only screen and (max-width:550px) {
+
+    /* .logo-title p {
+        font-size: 16px;
+
+    } */
+
+    .right-section {
+        margin-right: 10px;
+    }
+
 }

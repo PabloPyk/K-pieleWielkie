@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css style/navbar.css">
     <link rel="stylesheet" href="../css style/content.css">
     <link rel="stylesheet" href="../css style/footer.css">
+    <link rel="stylesheet" href="../css style/location.css">
+    <link rel="stylesheet" href="../css style/scrollanimation.css">
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -31,9 +33,21 @@
             </div>
         </div>
         <div class="middle-section">
-            <p class="website-tittle">Ochotnicza Straż Pożarna</p>
+            <p class="website-tittle"></p>
         </div>
         <div class="right-section">
+            <a href="../kapiele.html#form">
+                <button class="location-section-button" id="location-section-button">
+                    <img class="location-section-icon" src="../icons/form-svgrepo-com (1).svg">
+                    <div class="section-tooltip">Formularz</div>
+                </button>
+            </a>
+            <a href="#location">
+                <button class="location-section-button" id="location-section-button">
+                    <img class="location-section-icon" src="../icons/location-pin-alt-1-svgrepo-com (1).svg">
+                    <div class="section-tooltip">Lokalizacja</div>
+                </button>
+            </a>
             <button class="hamburger-menu" id="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
                     focusable="false" class="style-scope yt-icon"
@@ -86,7 +100,7 @@
         </a>
         <a class="nav-link" href="/dist/kologospodyn.html">
             <div class="nav-bar-link">
-                <img class="" src="../icons/history-svgrepo-com.svg">
+                <img class="" src="../icons/wreath-svgrepo-com.svg">
                 <div class="nav-bar-link-title">Koło Gospodyń Wiejskich</div>
             </div>
         </a>
@@ -97,13 +111,62 @@
 
 
     <main>
-        <section class="section">
+        <section id="full-jpg-picture">
+            <img class="full-jpg" src="../png/zdjiphone2.jpg">
+        </section>
+        <section class="section-subpage">
 
             <div class="margin"></div>
-            <div class="content">
-                <p>no co tam</p>
+            <div class="content-subpage">
+                <div class="title-content-subpage">Ochotnicza Straż Pożarna</div>
+
+                <p class="dark-destiption">
+
+                    W dniu 24 maja 1954 roku miało miejsce wydarzenie o wyjątkowym znaczeniu dla historii pożarnictwa w
+                    Kąpielach Wielkich. Wtedy to mieszkańcy tejże wsi podjęli decyzję o wspólnym utworzeniu jednostki
+                    ochotniczej straży pożarnej. To ważne wydarzenie zapisało się głęboko w historii lokalnego
+                    społeczeństwa, stanowiąc przełomowy moment dla zapewnienia bezpieczeństwa przeciwpożarowego w
+                    miejscowości. </p>
+
+                <p class="dark-destiption">
+
+                </p>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../content image/stareZdjecieRemiza.jpg" style="width: 100%;">
+                        <div class="text">Remiza Przed Remontem</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../content image/wozStrazacki.jpg" style="width: 100%;">
+                        <div class="text">Nowy Ciężki Pojazd Strażacki</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../content image/zdjiphone2.jpg" style="width: 100%;">
+                        <div class="text">Caption Text </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+
             </div>
             <div class="margin"></div>
+
+
+
+
+
 
 
 
@@ -111,51 +174,62 @@
         </section>
     </main>
 
+    <section class="location" id="location">
+        <h1 class="location-tittle">Zapraszamy!</h1>
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5083.613367017502!2d19.72903689897429!3d50.42607332141773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47171b4d6936318b%3A0x6f4301d6452f3536!2s32-340%20K%C4%85piele%20Wielkie!5e0!3m2!1spl!2spl!4v1707470134306!5m2!1spl!2spl"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <footer class="footer">
+        <div class="margin-left"></div>
+        <div class="footer-content">
+            <div class="wrapper hidden">
+                <div class="icon-facebook">
+                    <div class="tooltip">Facebook</div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="container-icon">
+                            <img class="facebook-icon" src="../icons/facebook-svgrepo-com.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-        <div class="wrapper">
-            <div class="icon-facebook">
-                <div class="tooltip">Facebook</div>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <div class="container-icon">
-                        <img class="facebook-icon" src="../icons/facebook-svgrepo-com.svg">
-                    </div>
-                </a>
+            <div class="wrapper hidden">
+                <div class="icon-instagram">
+                    <div class="tooltip">Instagram</div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <div class="container-icon">
+                            <img class="instagram-icon" src="../icons/instagram-svgrepo-com.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper hidden">
+                <div class="icon-linkedin">
+                    <div class="tooltip">LinkedIn</div>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <div class="container-icon">
+                            <img class="linkedin-icon" src="../icons/linkedin-svgrepo-com.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper hidden">
+                <div class="icon-github">
+                    <div class="tooltip">GitHub</div>
+                    <a href="https://www.github.com/" target="_blank">
+                        <div class="container-icon">
+                            <img class="github-icon" src="../icons/github-142-svgrepo-com.svg">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="margin-right"></div>
 
-        <div class="wrapper">
-            <div class="icon-instagram">
-                <div class="tooltip">Instagram</div>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <div class="container-icon">
-                        <img class="instagram-icon" src="../icons/instagram-svgrepo-com.svg">
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="icon-linkedin">
-                <div class="tooltip">LinkedIn</div>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <div class="container-icon">
-                        <img class="linkedin-icon" src="../icons/linkedin-svgrepo-com.svg">
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="icon-github">
-                <div class="tooltip">GitHub</div>
-                <a href="https://www.github.com/" target="_blank">
-                    <div class="container-icon">
-                        <img class="github-icon" src="../icons/github-142-svgrepo-com.svg">
-                    </div>
-                </a>
-            </div>
-        </div>
 
 
     </footer>

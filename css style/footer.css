@@ -2,17 +2,29 @@
 github: bacground: #333*/
 
 .footer {
-    display: flex;
-    justify-content: center;
-    margin-right: 170px;
-    margin-top: 400px;
-    margin-bottom: 50px;
-    align-items: center;
+    display: grid;
+    margin-top: 80px;
 
+    margin-left: 0px;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    place-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+
+
+
+
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .wrapper {
     display: inline-flex;
+    flex-direction: column;
+
 }
 
 .icon-facebook,
@@ -20,6 +32,7 @@ github: bacground: #333*/
 .icon-linkedin,
 .icon-github {
     margin: 0 20px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +65,8 @@ github: bacground: #333*/
     color: white;
 }
 
+
+
 .tooltip {
     position: absolute;
     top: 0px;
@@ -76,9 +91,6 @@ github: bacground: #333*/
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
-.icon-instagram:hover .instagram-icon {
-    fill: white;
-}
 
 .tooltip:before {
     position: absolute;
@@ -122,46 +134,13 @@ github: bacground: #333*/
 }
 
 
+/* responsive */
 
-/* .footer-facebook-container,
-.footer-instagram-container,
-.footer-linkedin-container {
-    margin: 0 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+@media only screen and (max-width:680px) {
 
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 40px;
+    }
 }
-
-.icon-tittle {
-    position: absolute;
-    font-size: 20px;
-    pointer-events: none;
-    white-space: nowrap;
-    background-color: gray;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 2px;
-    top: -50px;
-    left: -25px;
-    opacity: 0;
-}
-
-.footer-facebook-container:hover .icontitle {
-    opacity: 1;
-}
-
-.footer-instagram-container .instagram-icon,
-.footer-facebook-container .facebook-icon,
-.footer-linkedin-container .linkedin-icon {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-
-}  */
-
-/* .footer-facebook-container .facebook-icon {
-    width: 65px;
-    height: 65px;
-} */
