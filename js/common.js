@@ -41,9 +41,6 @@ document.getElementById('hamburger-menu').addEventListener('click', function () 
 var fullImgBox = document.getElementById("fullImgBox");
 var fullImg = document.getElementById("fullImg");
 
-
-
-
 function openFullImg(imgElement) {
     fullImgBox.style.display = "flex";
     fullImg.src = imgElement.src;
@@ -51,9 +48,19 @@ function openFullImg(imgElement) {
 
 function closeFullImg() {
     fullImgBox.style.display = "none";
+
+
+}
+
+function dontCloseFullImg(event) {
+    event.stopPropagation();
 }
 
 
+
+
+
+// cos innego
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)

@@ -11,49 +11,17 @@
     transform: translateX(0);
 }
 
-/* .form-content.hidden {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateY(100%);
-    transition: all 1s;
-}
 
-.form-content.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-}
- */
-
-.form-content {
-    animation: bottomAnimation linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% contain 30%;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes bottomAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(100%) rotate(45deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0%) rotate(0eg);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-
-    }
-}
-
-.right-side-picture {
+.right-side-picture,
+.right-side-form {
     animation: rightAnimation linear both;
     animation-timeline: view(block);
     animation-range: cover 10% contain 40%;
     animation-timing-function: ease-in-out;
 }
 
-.left-side-picture {
+.left-side-picture,
+.left-side-form {
     animation: leftAnimation linear both;
     animation-timeline: view(block);
     animation-range: cover 10% contain 40%;
@@ -103,6 +71,11 @@
     transition-delay: 300ms;
 }
 
+.wrapper:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+
 
 
 
@@ -118,6 +91,44 @@
 
 
     animation-range: entry 25% cover 40%;
+}
+
+
+@media only screen and (max-width:500px) {
+
+    .location {
+        animation: none;
+    }
+
+    .hidden {
+        opacity: none;
+        filter: none;
+        transform: none;
+        transition: none;
+    }
+
+    .show {
+        opacity: none;
+        filter: none;
+        transform: none;
+    }
+
+    .wrapper:nth-child(2) {
+        transition-delay: none;
+    }
+
+    .wrapper:nth-child(3) {
+        transition-delay: none;
+    }
+
+    .wrapper:nth-child(4) {
+        transition-delay: none;
+    }
+
+    .wrapper:nth-child(5) {
+        transition-delay: none;
+    }
+
 }
 
 @keyframes reveal {
@@ -223,5 +234,27 @@ h1 {
         animation: grayJpg linear forwards;
         animation-timeline: scroll();
         animation-range: 0vh 40vh;
+    }
+
+    .fullscreen-png {
+
+        animation: fadePng linear forwards;
+        animation-timeline: scroll();
+        animation-range: 0vh 60vh;
+    }
+}
+
+
+@media only screen and (max-width:650px) {
+
+    .left-side-picture,
+    .left-side-form,
+    .right-side-picture,
+    .right-side-form {
+        animation: none;
+    }
+
+    .left-side-form {
+        margin-bottom: 0px;
     }
 }

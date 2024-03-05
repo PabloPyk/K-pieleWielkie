@@ -51,10 +51,14 @@
             <button class="hamburger-menu" id="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
                     focusable="false" class="style-scope yt-icon"
-                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                    style="pointer-events: none; display: block; width: 100%; height: 100%;" stroke-width="2">
                     <g class="style-scope yt-icon">
-                        <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon">
-                        </path>
+                        <!-- Czarne obwódki -->
+                        <path d="M21,5H3v1h18V5z M21,9H3v1h18V9z M21,13H3v1h18V13z M21,17H3v1h18V17z"
+                            class="style-scope yt-icon" stroke="black" stroke-width="5" fill="none"></path>
+                        <!-- Białe wnętrze -->
+                        <path d="M21,5H3v1h18V5z M21,9H3v1h18V9z M21,13H3v1h18V13z M21,17H3v1h18V17z"
+                            class="style-scope yt-icon" stroke="white" stroke-width="1" fill="none"></path>
                     </g>
                 </svg>
             </button>
@@ -203,7 +207,8 @@
     <footer class="footer">
         <div class="margin-left"></div>
         <div class="footer-content">
-            <div class="wrapper">
+            <p class="footer-autor hidden">Design By:</p>
+            <div class="wrapper hidden">
                 <div class="icon-facebook">
                     <div class="tooltip">Facebook</div>
                     <a href="https://www.facebook.com/" target="_blank">
@@ -214,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="wrapper">
+            <div class="wrapper hidden">
                 <div class="icon-instagram">
                     <div class="tooltip">Instagram</div>
                     <a href="https://www.instagram.com/" target="_blank">
@@ -225,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="wrapper">
+            <div class="wrapper hidden">
                 <div class="icon-linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <a href="https://www.linkedin.com/" target="_blank">
@@ -236,7 +241,7 @@
                 </div>
             </div>
 
-            <div class="wrapper">
+            <div class="wrapper hidden">
                 <div class="icon-github">
                     <div class="tooltip">GitHub</div>
                     <a href="https://www.github.com/" target="_blank">

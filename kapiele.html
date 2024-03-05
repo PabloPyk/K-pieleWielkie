@@ -53,10 +53,14 @@
             <button class="hamburger-menu" id="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
                     focusable="false" class="style-scope yt-icon"
-                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                    style="pointer-events: none; display: block; width: 100%; height: 100%;" stroke-width="2">
                     <g class="style-scope yt-icon">
-                        <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon">
-                        </path>
+
+                        <path d="M21,5H3v1h18V5z M21,9H3v1h18V9z M21,13H3v1h18V13z M21,17H3v1h18V17z"
+                            class="style-scope yt-icon" stroke="black" stroke-width="5" fill="none"></path>
+
+                        <path d="M21,5H3v1h18V5z M21,9H3v1h18V9z M21,13H3v1h18V13z M21,17H3v1h18V17z"
+                            class="style-scope yt-icon" stroke="white" stroke-width="1" fill="none"></path>
                     </g>
                 </svg>
             </button>
@@ -113,9 +117,9 @@
 
 
     <main>
-        <div class="fullscreen-div">
+        <section class="fullscreen-div">
             <img class="fullscreen-png" src="../png/kapieleview.jpg">
-        </div>
+        </section>
         <section class="section">
 
             <div class="margin"></div>
@@ -180,15 +184,8 @@
 
                 </section>
 
-                <!-- <div class="right-arrow">
-                    <img src="./png/kapieleview.jpg">
-                </div> -->
 
-                <p id="form" class="form-info">Pomóż mi ulepszyć stronę! Jeśli masz ciekawe informacje lub zdjęcia,
-                    którymi
-                    chciałbyś się
-                    podzielić,
-                    skorzystaj z poniższego formularza.</p>
+
             </div>
             <div class="margin"></div>
 
@@ -202,33 +199,36 @@
     <section class="form">
         <div class="margin-left"></div>
         <div class="form-content">
-            <div class="left-side-form">
-                <div class="form-tittle">Formularz kontaktowy</div>
-                <div class="form-picture">
-                    <img src="./png/kapieleview.jpg">
+            <p id="form" class="form-info">Pomóż mi ulepszyć stronę! Jeśli masz ciekawe informacje lub zdjęcia,
+                którymi
+                chciałbyś się
+                podzielić,
+                skorzystaj z poniższego formularza.</p>
+            <div class="form-contact">
+                <div class="left-side-form">
+                    <div class="form-tittle">Formularz kontaktowy</div>
+                    <div class="form-picture">
+                        <img src="./png/kapieleview.jpg">
+                    </div>
                 </div>
+                <div class="right-side-form">
+                    <form class="form-1" action="send_form.php" method="post" enctype="multipart/form-data">
+                        <label class="label-preeter" for="email">Adres E-mail:</label><br>
+                        <input class="input-preeter" placeholder="Wpisz e-mail" type="email" id="email" name="email"
+                            required><br><br>
+
+                        <label class="label-preeter" for="message">Wiadomość:</label><br>
+                        <textarea class="input-preeter" maxlength="200" placeholder="Napisz wiadomość" id="message"
+                            name="message" rows="4" required></textarea><br><br>
+
+
+                        <input class="submit-input" type="submit" value="Wyślij">
+                    </form>
+                </div>
+
             </div>
-            <div class="form-square"></div>
-            <div class="right-side-form">
-                <form class="form-1" action="send_form.php" method="post" enctype="multipart/form-data">
-                    <label class="label-preeter" for="name">Imię i Nazwisko:</label><br>
-                    <input class="input-preeter" placeholder="Wpisz dane" type="text" id="name" name="name"
-                        required><br><br>
-
-                    <label class="label-preeter" for="email">Adres E-mail:</label><br>
-                    <input class="input-preeter" placeholder="Wpisz e-mail" type="email" id="email" name="email"
-                        required><br><br>
-
-                    <label class="label-preeter" for="message">Wiadomość:</label><br>
-                    <textarea class="input-preeter" maxlength="200" placeholder="Napisz wiadomość" id="message"
-                        name="message" rows="4" required></textarea><br><br>
-
-
-                    <input class="submit-input" type="submit" value="Wyślij">
-                </form>
-            </div>
-
         </div>
+
         <div class="margin-right"></div>
     </section>
 
@@ -242,6 +242,7 @@
     <footer class="footer">
         <div class="margin-left"></div>
         <div class="footer-content">
+            <p class="footer-autor hidden">Design By:</p>
             <div class="wrapper hidden">
                 <div class="icon-facebook">
                     <div class="tooltip">Facebook</div>

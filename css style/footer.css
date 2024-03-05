@@ -1,6 +1,3 @@
-/* instagram : background: e1306c; 
-github: bacground: #333*/
-
 .footer {
     display: grid;
     margin-top: 80px;
@@ -17,6 +14,123 @@ github: bacground: #333*/
 }
 
 .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+
+}
+
+.footer-autor {
+    font-size: 10px;
+    color: gray;
+
+
+}
+
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.icon-facebook,
+.icon-instagram,
+.icon-linkedin,
+.icon-github {
+    margin: 0 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.container-icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.github-icon {
+    height: 12.5px;
+    width: 12.5px;
+    margin-top: 8px;
+    color: white;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    padding: 5px 9px;
+    border-radius: 12.5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon-facebook:hover .tooltip,
+.icon-instagram:hover .tooltip,
+.icon-linkedin:hover .tooltip,
+.icon-github:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    top: -35px;
+    color: white;
+    text-shadow: 0px -0.5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.tooltip:before {
+    position: absolute;
+    content: "";
+    height: 7.5px;
+    width: 7.5px;
+    background-color: rgb(228, 227, 227);
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon-facebook:hover .container-icon,
+.icon-facebook:hover .tooltip,
+.icon-facebook:hover .tooltip:before {
+    background: #3B5999;
+}
+
+.icon-instagram:hover .container-icon,
+.icon-instagram:hover .tooltip,
+.icon-instagram:hover .tooltip:before {
+    background: #e1306c;
+}
+
+.icon-linkedin:hover .container-icon,
+.icon-linkedin:hover .tooltip,
+.icon-linkedin:hover .tooltip:before {
+    background: #0077B5;
+}
+
+.icon-github:hover .container-icon,
+.icon-github:hover .tooltip,
+.icon-github:hover .tooltip:before {
+    background: #333;
+}
+
+/* .footer-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -131,16 +245,22 @@ github: bacground: #333*/
 .icon-github:hover .tooltip:before {
     background: #333;
 
-}
+} */
 
 
 /* responsive */
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:500px) {
 
     .footer-content {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 50px;
-        column-gap: 40px;
+        column-gap: 0px;
     }
+
+    .footer-autor {
+        font-size: 9px;
+
+
+    }
+
+
 }

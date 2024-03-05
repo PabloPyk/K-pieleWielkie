@@ -115,6 +115,13 @@
     padding-top: 2px;
 }
 
+.hamburger-menu-icon {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+
+
 
 
 .hamburger-menu {
@@ -140,15 +147,15 @@
 
 /* responsive header */
 
-@media only screen and (max-width:550px) {
 
-    /* .logo-title p {
+
+@media only screen and (max-width:500px) {
+    .logo-title p {
         font-size: 16px;
 
-    } */
-
-    .right-section {
-        margin-right: 10px;
     }
 
+    .right-section {
+        column-gap: 20px;
+    }
 }

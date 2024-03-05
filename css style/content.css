@@ -2,27 +2,32 @@
     display: grid;
     margin-left: 0px;
     grid-template-columns: 0.5fr 3fr 0.5fr;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+
+
 
 }
 
 .fullscreen-png {
-    color: #fff;
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     background-size: cover;
-    background-position: 50% 50%;
-    background-blend-mode: soft-light;
-    display: grid;
-    place-items: center;
-    text-align: center;
+
+
+
+
+
 }
 
 .content {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
 
-    /* z-index: 10; */
 
 
 }
@@ -52,6 +57,13 @@
     display: grid;
     width: 100%;
     height: auto;
+    max-height: 100vh;
+
+
+
+
+
+
 
 
 }
@@ -64,16 +76,26 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .container-galerry {
-    margin-top: 50px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 40px;
     justify-items: center;
     align-items: center;
+
+}
+
+.galerry-tittle {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .picture-row {
@@ -86,9 +108,12 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    cursor: pointer;
 
 
 }
+
+
 
 .enlarge-picture {
     position: absolute;
@@ -108,7 +133,7 @@
 }
 
 .picture-destription-row {
-    padding: 0 5px;
+    padding: 0 10px;
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
@@ -158,6 +183,8 @@
     transition: all 0.25s;
     width: 100%;
     min-width: 350px;
+    border-radius: 5px;
+    padding: 5px;
 
 }
 
@@ -168,6 +195,11 @@
     border: 1px solid #00415F;
     padding: 5px;
     border-radius: 5px;
+
+}
+
+#fullImg {
+    border-radius: 10px;
 
 }
 
@@ -201,6 +233,7 @@
         max-width: 350px;
         column-gap: 100px;
         row-gap: 20px;
+        margin-top: 100px;
 
 
 
@@ -214,6 +247,7 @@
         max-width: 350px;
         column-gap: 30px;
         row-gap: 20px;
+        margin-top: 100px;
 
 
     }
@@ -225,7 +259,26 @@
         grid-template-columns: 1fr;
         max-width: 350px;
         margin: auto;
+        margin-top: 100px;
 
+
+    }
+
+    .galerry-tittle {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .picture-preview {
+        width: 100%;
+        min-width: 300px;
+        height: auto;
+    }
+
+    .picture-preview:hover {
+        transform: scale(0.9) rotate(3deg);
 
     }
 }
@@ -269,8 +322,9 @@
 .left-side-picture img {
     flex: 40%;
     height: auto;
-    width: 400px;
+    max-width: 400px;
     justify-content: center;
+    align-items: center;
 
 
 }
@@ -288,6 +342,7 @@
     max-width: 400px;
 
 
+
 }
 
 .left-side-picture {
@@ -297,6 +352,49 @@
     max-width: 400px;
     align-items: center;
     justify-content: center;
+
+}
+
+@media only screen and (max-width:500px) {
+
+    .right-side-picture,
+    .left-side-picture {
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    .right-side-picture {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+
+
+    .right-side-picture img,
+    .left-side-picture img {
+        padding: 0;
+        max-width: 300px;
+
+
+
+    }
+
+    .content-destription {
+        max-width: 80%;
+    }
+
+    .fullscreen-div,
+    .fullscreen-png {
+        width: 100%;
+    }
+
+    .content-destription {
+        max-width: 100%;
+    }
 
 }
 
@@ -326,7 +424,7 @@
 
 
 #full-jpg-picture {
-    top: 60px;
+    margin-top: 60px;
     width: 100%;
     height: auto;
     display: grid;
@@ -403,6 +501,25 @@
 
 }
 
+@media only screen and (max-width:500px) {
+
+    #full-jpg-picture {
+        min-height: 40vh;
+
+
+    }
+
+    #full-jpg-picture img {
+        min-height: 40vh;
+
+    }
+
+
+
+
+}
+
+
 
 
 
@@ -410,18 +527,43 @@
 
 .mySlides {
     display: none;
+    position: relative;
+
+
 }
+
+.mySlides::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    height: 15%;
+    background: linear-gradient(180deg, rgba(121, 119, 119, 0), gray);
+}
+
+
 
 .mySlides img {
     vertical-align: middle;
     max-height: 70vh;
     object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+
+
 }
 
+
 .slideshow-container {
+    margin-top: 50px;
     max-width: 100%;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+
+
 }
 
 .prev,
@@ -460,6 +602,7 @@
     bottom: 8px;
     color: white;
     font-weight: 400;
+    z-index: 2;
 
 }
 
@@ -470,6 +613,7 @@
     position: absolute;
     font-weight: 400;
     top: 0;
+    z-index: 2;
 }
 
 .dot {
