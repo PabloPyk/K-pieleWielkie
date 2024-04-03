@@ -11,7 +11,6 @@
     transform: scale(0);
     transition: transform 0.5s, background-color 0.5s;
     overflow-y: auto;
-    /* Dodaj pionowe przewijanie, jeśli zawartość przekracza dostępną wysokość */
     max-height: 100%;
 
 
